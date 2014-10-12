@@ -1,0 +1,18 @@
+---
+layout:     post
+title:      "Dinosaurs are extinct today"
+subtitle:   "because they lacked opposable thumbs and the brainpower to build a space program."
+date:       2014-10-12 12:00:00
+author:     "Josu Antón"
+header-img: "img/post-bg-01.jpg"
+---
+
+# Este es el primer post que pongo en el blog
+
+## Y esto pretende ser un subtitulo
+
+Es en realidad la vida...
+
+*No recuerdo como se escribia en markdown*
+
+** Pero eera algo así**
