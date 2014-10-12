@@ -15,6 +15,12 @@ Es en realidad la vida...
 
 *No recuerdo como se escribia en markdown*
 
-** Pero eera algo así**
+**Lo estoy haciendo mal?**
 
--d-
+~~Y así se tacha~~
+
+Y poco mas...
+<pre>print(Hello)</pre>
+
+Algo más?
+Para incluir enlaces:nop
