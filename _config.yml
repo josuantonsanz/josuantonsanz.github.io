@@ -2,7 +2,7 @@
 title: Clean Blog
 email: josuantonsanz@gmail.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/"
+baseurl: "http://josuanton.me/"
 url: "http://josuanton.me"
 twitter_username: josuanton
 github_username:  josuantonsanz
