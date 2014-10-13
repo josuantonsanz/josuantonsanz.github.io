@@ -1,15 +1,7 @@
-# Site settings
-title: El blog de Josu
-email: josuantonsanz@gmail.com
-description: "Este es mi blog, espero ir publicando cosas en el, nada del otro mundo"
-baseurl: "http://josuanton.me/"
-url: "http://josuanton.me"
-twitter_username: josuanton
-github_username:  josuantonsanz
-facebook_username:  Josu Antón Sanz
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-# Build settings
-markdown: kramdown
-permalink: pretty
-paginate: 5
-exclude: ["node_modules"]
+auto: true # automatically update your jekyll
+server: false # runs a local server
+paginate: 10 # pagination basted on number of posts
+exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss'] # files to exclude
+
