@@ -3,20 +3,10 @@ layout: post_page
 title: Primer post
 ---
 
-Este es el primer post que pongo en el blog
-
-Y esto pretende ser un subtitulo
-
-Es en realidad la vida...
-
-*No recuerdo como se escribia en markdown*
-
+Este es el primer post que pongo en el blog. Y esto pretende ser un subtitulo. Es en realidad la vida... *No recuerdo como se escribia en markdown*
 **Lo estoy haciendo mal?**
-
 ~~Y así se tacha~~
-
 Y poco mas...
 <pre>print(Hello)</pre>
-
 Algo más?
 Para incluir enlaces:nop
