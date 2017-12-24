@@ -217,8 +217,9 @@ function Juego () {
             console.debug("FUnciones?")
             colorCell(x1, y1, x2, y2, this.turno);
             tablaTemp.setState(x2, y2, this.turno);
-            this.setActiveCell(x2, y2);
             this.ganadoTabla(x1,y1);
+            this.setActiveCell(x2, y2);
+
             terminado = this.comprobarJuegoTerminado();
             if (terminado != 0){
               this.activeCell = "0";
@@ -226,7 +227,7 @@ function Juego () {
               if (this.state == this.usuario){
                 texto = "<h1>Has ganado!</h1>";
               }else{
-                texto = "<h2>Has ganado!</h2>";
+                texto = "<h2>Has perdido!</h2>";
               }
               $("body").html(texto);
             }
