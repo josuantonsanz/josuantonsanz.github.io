@@ -1,75 +1,206 @@
----
-layout: default
-title: Inicio
----
-<!-- Content
-    ================================================== -->
-  <div class="top-strip"></div>
-  <div class="content">
-    <main class="container">
-    	<div class="row-fluid">
-    		<section class="content">
-    		  <h1>Mi blog</h1>
-    		</section>
-    		<ul class="entries">
-    		{% for post in paginator.posts %}
-    		  <li>
-    		    <a href="{{ post.url }}">
-                      <span>{{ post.date | date: "%d %B %Y" }}</span>
-    		        <h3>{{ post.title }}</h3>
-                      <div>{{ post.content |truncatehtml | truncatewords: 30 }}</div>
-    		    </a>
-    		  </li>
-    		{% endfor %}
-    		</ul>
-    	</div>
-      <hr>
-      <div id="post-pagination">
-        {% if paginator.previous_page %}
-        <p class="prev">
-          {% if paginator.previous_page == 1 %}
-          <a href="/">Previous</a>
-          {% else %}
-          <a href="/page{{paginator.previous_page}}"> Previous</a>
-          {% endif %}
-        </p>
-        {% else %}
-<!--         <p class="prev disabled">
-          <span>Previous</span>
-        </p> -->
-        {% endif %}
+<html>
+<head>
 
-        <ul class="pages">
-          <li class="page">
-            {% if paginator.page == 1 %}
-<!--             <span class="current-page">1</span> -->
-            {% else %}
-            <a href="/">1</a>
-            {% endif %}
-          </li>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="https://use.fontawesome.com/c2cd48c1ef.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+<script src="main.js"></script>
+</head>
+<body>
+  <div class="complete">
+    <table id="tabla" class="tabla">
+      <tr>
+        <td id="11" class="cell tabla">
+          <table>
+            <tr>
+              <td id="1111" onClick="JavaScript: clickCell(1,1,1,1);" class="cell sub">&nbsp;</td>
+              <td id="1112" onClick="JavaScript: clickCell(1,1,1,2);" class="cell sub">&nbsp;</td>
+              <td id="1113" onClick="JavaScript: clickCell(1,1,1,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="1121" onClick="JavaScript: clickCell(1,1,2,1);" class="cell sub">&nbsp;</td>
+              <td id="1122" onClick="JavaScript: clickCell(1,1,2,2);" class="cell sub">&nbsp;</td>
+              <td id="1123" onClick="JavaScript: clickCell(1,1,2,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="1131" onClick="JavaScript: clickCell(1,1,3,1);" class="cell sub">&nbsp;</td>
+              <td id="1132" onClick="JavaScript: clickCell(1,1,3,2);" class="cell sub">&nbsp;</td>
+              <td id="1133" onClick="JavaScript: clickCell(1,1,3,3);" class="cell sub">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+        <td id="12" class="cell tabla">
+          <table>
+            <tr>
+              <td id="1211" onClick="JavaScript: clickCell(1,2,1,1);" class="cell sub">&nbsp;</td>
+              <td id="1212" onClick="JavaScript: clickCell(1,2,1,2);" class="cell sub">&nbsp;</td>
+              <td id="1213" onClick="JavaScript: clickCell(1,2,1,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="1221" onClick="JavaScript: clickCell(1,2,2,1);" class="cell sub">&nbsp;</td>
+              <td id="1222" onClick="JavaScript: clickCell(1,2,2,2);" class="cell sub">&nbsp;</td>
+              <td id="1223" onClick="JavaScript: clickCell(1,2,2,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="1231" onClick="JavaScript: clickCell(1,2,3,1);" class="cell sub">&nbsp;</td>
+              <td id="1232" onClick="JavaScript: clickCell(1,2,3,2);" class="cell sub">&nbsp;</td>
+              <td id="1233" onClick="JavaScript: clickCell(1,2,3,3);" class="cell sub">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+        <td id="13" class="cell tabla">
+          <table>
+            <tr>
+              <td id="1311" onClick="JavaScript: clickCell(1,3,1,1);" class="cell sub">&nbsp;</td>
+              <td id="1312" onClick="JavaScript: clickCell(1,3,1,2);" class="cell sub">&nbsp;</td>
+              <td id="1313" onClick="JavaScript: clickCell(1,3,1,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="1321" onClick="JavaScript: clickCell(1,3,2,1);" class="cell sub">&nbsp;</td>
+              <td id="1322" onClick="JavaScript: clickCell(1,3,2,2);" class="cell sub">&nbsp;</td>
+              <td id="1323" onClick="JavaScript: clickCell(1,3,2,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="1331" onClick="JavaScript: clickCell(1,3,3,1);" class="cell sub">&nbsp;</td>
+              <td id="1332" onClick="JavaScript: clickCell(1,3,3,2);" class="cell sub">&nbsp;</td>
+              <td id="1333" onClick="JavaScript: clickCell(1,3,3,3);" class="cell sub">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td id="21" class="cell tabla">
+          <table>
+            <tr>
+              <td id="2111" onClick="JavaScript: clickCell(2,1,1,1);" class="cell sub">&nbsp;</td>
+              <td id="2112" onClick="JavaScript: clickCell(2,1,1,2);" class="cell sub">&nbsp;</td>
+              <td id="2113" onClick="JavaScript: clickCell(2,1,1,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="2121" onClick="JavaScript: clickCell(2,1,2,1);" class="cell sub">&nbsp;</td>
+              <td id="2122" onClick="JavaScript: clickCell(2,1,2,2);" class="cell sub">&nbsp;</td>
+              <td id="2123" onClick="JavaScript: clickCell(2,1,2,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="2131" onClick="JavaScript: clickCell(2,1,3,1);" class="cell sub">&nbsp;</td>
+              <td id="2132" onClick="JavaScript: clickCell(2,1,3,2);" class="cell sub">&nbsp;</td>
+              <td id="2133" onClick="JavaScript: clickCell(2,1,3,3);" class="cell sub">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+        <td id="22" class="cell tabla">
+          <table>
+            <tr>
+              <td id="2211" onClick="JavaScript: clickCell(2,2,1,1);" class="cell sub">&nbsp;</td>
+              <td id="2212" onClick="JavaScript: clickCell(2,2,1,2);" class="cell sub">&nbsp;</td>
+              <td id="2213" onClick="JavaScript: clickCell(2,2,1,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="2221" onClick="JavaScript: clickCell(2,2,2,1);" class="cell sub">&nbsp;</td>
+              <td id="2222" onClick="JavaScript: clickCell(2,2,2,2);" class="cell sub">&nbsp;</td>
+              <td id="2223" onClick="JavaScript: clickCell(2,2,2,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="2231" onClick="JavaScript: clickCell(2,2,3,1);" class="cell sub">&nbsp;</td>
+              <td id="2232" onClick="JavaScript: clickCell(2,2,3,2);" class="cell sub">&nbsp;</td>
+              <td id="2233" onClick="JavaScript: clickCell(2,2,3,3);" class="cell sub">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+        <td id="23" class="cell tabla">
+          <table>
+            <tr>
+              <td id="2311" onClick="JavaScript: clickCell(2,3,1,1);" class="cell sub">&nbsp;</td>
+              <td id="2312" onClick="JavaScript: clickCell(2,3,1,2);" class="cell sub">&nbsp;</td>
+              <td id="2313" onClick="JavaScript: clickCell(2,3,1,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="2321" onClick="JavaScript: clickCell(2,3,2,1);" class="cell sub">&nbsp;</td>
+              <td id="2322" onClick="JavaScript: clickCell(2,3,2,2);" class="cell sub">&nbsp;</td>
+              <td id="2323" onClick="JavaScript: clickCell(2,3,2,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="2331" onClick="JavaScript: clickCell(2,3,3,1);" class="cell sub">&nbsp;</td>
+              <td id="2332" onClick="JavaScript: clickCell(2,3,3,2);" class="cell sub">&nbsp;</td>
+              <td id="2333" onClick="JavaScript: clickCell(2,3,3,3);" class="cell sub">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td id="31" class="cell tabla">
+          <table>
+            <tr>
+              <td id="3111" onClick="JavaScript: clickCell(3,1,1,1);" class="cell sub">&nbsp;</td>
+              <td id="3112" onClick="JavaScript: clickCell(3,1,1,2);" class="cell sub">&nbsp;</td>
+              <td id="3113" onClick="JavaScript: clickCell(3,1,1,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="3121" onClick="JavaScript: clickCell(3,1,2,1);" class="cell sub">&nbsp;</td>
+              <td id="3122" onClick="JavaScript: clickCell(3,1,2,2);" class="cell sub">&nbsp;</td>
+              <td id="3123" onClick="JavaScript: clickCell(3,1,2,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="3131" onClick="JavaScript: clickCell(3,1,3,1);" class="cell sub">&nbsp;</td>
+              <td id="3132" onClick="JavaScript: clickCell(3,1,3,2);" class="cell sub">&nbsp;</td>
+              <td id="3133" onClick="JavaScript: clickCell(3,1,3,3);" class="cell sub">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+        <td id="32" class="cell tabla">
+          <table>
+            <tr>
+              <td id="3211" onClick="JavaScript: clickCell(3,2,1,1);" class="cell sub">&nbsp;</td>
+              <td id="3212" onClick="JavaScript: clickCell(3,2,1,2);" class="cell sub">&nbsp;</td>
+              <td id="3213" onClick="JavaScript: clickCell(3,2,1,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="3221" onClick="JavaScript: clickCell(3,2,2,1);" class="cell sub">&nbsp;</td>
+              <td id="3222" onClick="JavaScript: clickCell(3,2,2,2);" class="cell sub">&nbsp;</td>
+              <td id="3223" onClick="JavaScript: clickCell(3,2,2,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="3231" onClick="JavaScript: clickCell(3,2,3,1);" class="cell sub">&nbsp;</td>
+              <td id="3232" onClick="JavaScript: clickCell(3,2,3,2);" class="cell sub">&nbsp;</td>
+              <td id="3233" onClick="JavaScript: clickCell(3,2,3,3);" class="cell sub">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+        <td id="33" class="cell tabla">
+          <table>
+            <tr>
+              <td id="3311" onClick="JavaScript: clickCell(3,3,1,1);" class="cell sub">&nbsp;</td>
+              <td id="3312" onClick="JavaScript: clickCell(3,3,1,2);" class="cell sub">&nbsp;</td>
+              <td id="3313" onClick="JavaScript: clickCell(3,3,1,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="3321" onClick="JavaScript: clickCell(3,3,2,1);" class="cell sub">&nbsp;</td>
+              <td id="3322" onClick="JavaScript: clickCell(3,3,2,2);" class="cell sub">&nbsp;</td>
+              <td id="3323" onClick="JavaScript: clickCell(3,3,2,3);" class="cell sub">&nbsp;</td>
+            </tr>
+            <tr>
+              <td id="3331" onClick="JavaScript: clickCell(3,3,3,1);" class="cell sub">&nbsp;</td>
+              <td id="3332" onClick="JavaScript: clickCell(3,3,3,2);" class="cell sub">&nbsp;</td>
+              <td id="3333" onClick="JavaScript: clickCell(3,3,3,3);" class="cell sub">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
 
-          {% for count in (2..paginator.total_pages) %}
-          <li class="page">
-            {% if count == paginator.page %}
-            <span class="current-page">{{count}}</span>
-            {% else %}
-            <a href="/page{{count}}">{{count}}</a>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
 
-        {% if paginator.next_page %}
-        <p class="next">
-          <a href="/page{{paginator.next_page}}">Next</a>
-        </p>
-        {% else %}
-<!--         <p class="next disabled">
-          <span>Next</span>
-        </p> -->
-        {% endif %}
-      </div>
-
-    </main>
   </div>
 
+  <div class="datos">
+    <p>Id propio: <span id="idMio"></span></p>
+    <input id="idComp" type="text" placeholder="Introducir id del compañero">
+    <input type="button" onClick="JavaScript: iniciar()" value="Iniciar">
+
+  </div>
+
+</body>
+</html>

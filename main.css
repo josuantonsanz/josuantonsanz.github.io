@@ -1,0 +1,59 @@
+body {
+    background-color: #78aed2;
+}
+
+.complete {
+  width: 100%;
+}
+
+.tabla {
+  text-align: center;
+  margin-left:auto;
+margin-right:auto;
+}
+
+.cell {
+  width:235px;
+  height:80px;
+  border: 1.5px solid #000000;
+  background: #FFFFFF;
+  font-size: 46pt;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding:0;
+}
+.sub {
+  border: 1px solid #333;
+  width: 75px;
+}
+
+i {
+  margin:0;
+  padding:0;
+  width: 60px!;
+}
+
+.fa-circle-o {
+  color: blue;
+}
+
+.fa-times {
+  color: red;
+}
+
+.mark {
+  float: left;
+  position: inherit;
+  width: inherit;
+}
+
+.activa {
+  background: #612;
+  background-color: #f5e496;
+}
+
+.activa td {
+  background-color: #f5e496;
+}
